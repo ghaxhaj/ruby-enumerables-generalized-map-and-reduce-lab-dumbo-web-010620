@@ -6,5 +6,4 @@ def map_to_negativize(source_array)
     i += 1
     yield new
   end
-  return new
-end
+  
