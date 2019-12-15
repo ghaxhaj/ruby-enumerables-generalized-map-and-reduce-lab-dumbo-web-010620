@@ -6,4 +6,6 @@ def map_to_negativize(source_array)
     i += 1
     yield new
   end
-  
+
+  map_to_negativize(23) do |t|
+    puts "#{t}"
