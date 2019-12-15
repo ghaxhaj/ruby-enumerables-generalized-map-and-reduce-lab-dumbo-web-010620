@@ -8,17 +8,17 @@ def map(source_array)
   new
 end
 
-def reduce(source_array sv = nil)
-  if sv
-    sum = sv
+def reduce(s, sp=nil)
+  if sp
+    accum = sp
     i = 0
   else
-    sum = source_array[0]
+    accum = s[0]
     i = 1
-end
-while i < source_array.length
-  sum = yield(sum, source_array[i])
-  i += 1
-end
-sum
+  end
+  while i < s.length
+    accum = yield(accum, s[i])
+    i += 1
+  end
+  accum
 end
