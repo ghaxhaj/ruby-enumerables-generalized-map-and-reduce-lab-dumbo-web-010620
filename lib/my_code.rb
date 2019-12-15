@@ -1,5 +1,8 @@
-def map(source_array)
-  base = "I love #{source_array}!"
-  yield (base)
+def map_to_negativize(source_array)
+  new = []
+  i = 0
+  while i < source_array.length do
+    new = (source_array[i] * -1)
+    i += 1 
+  yield (new)
 end
- 
