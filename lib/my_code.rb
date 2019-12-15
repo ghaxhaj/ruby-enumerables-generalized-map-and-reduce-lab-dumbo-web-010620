@@ -1,3 +1,3 @@
-map to negativize(source_array) do
-  source_array[i] * -1
+map to negativize(source_array) do |num|
+  num * -1
 end
