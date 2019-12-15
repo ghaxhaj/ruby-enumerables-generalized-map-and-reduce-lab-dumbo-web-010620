@@ -1,1 +1,5 @@
-map_to_negativize(source_array){n * -1}
+map to negativize(source_array) do 
+  source_array[i] * -1 
+end
+
+
